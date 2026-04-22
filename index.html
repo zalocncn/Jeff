@@ -19,51 +19,53 @@
       <span class="nav__mark">JU</span>
       <span class="nav__name">Jeff Underdahl</span>
     </a>
-    <nav class="nav__menu" aria-label="Primary">
-      <a href="#listings">Listings</a>
-      <a href="#about">About</a>
-      <a href="#valuation">Home Value</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <div class="nav__actions">
-      <a href="tel:+17602718772" class="nav__phone" aria-label="Call Jeff">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        760.271.8772
-      </a>
-      <a href="#contact" class="btn btn--ghost">Let's Talk</a>
-    </div>
-    <button class="nav__toggle" aria-label="Menu" aria-expanded="false">
-      <span></span><span></span>
+
+    <button class="nav__toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-panel">
+      <span class="nav__toggle-label">Menu</span>
+      <span class="nav__toggle-bars" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </span>
     </button>
+  </div>
+
+  <div class="nav__panel" id="nav-panel" aria-hidden="true">
+    <div class="nav__panel-inner">
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#listings"><span class="num">01</span>Listings</a>
+        <a href="#about"><span class="num">02</span>About Jeff</a>
+        <a href="#valuation"><span class="num">03</span>Home Value</a>
+        <a href="#reviews"><span class="num">04</span>Reviews</a>
+        <a href="#contact"><span class="num">05</span>Contact</a>
+      </nav>
+      <div class="nav__panel-contact">
+        <div class="nav__panel-label">Call &amp; text</div>
+        <a href="tel:+17602718772" class="nav__panel-phone">+1 (760) 271-8772</a>
+        <a href="mailto:jeff@jeffunderdahl.com" class="nav__panel-email">jeff@jeffunderdahl.com</a>
+        <p class="nav__panel-address">10620 Treena St. STE 230<br>San Diego, CA 92131</p>
+      </div>
+    </div>
   </div>
 </header>
 
-<!-- ============ HERO ============ -->
 <section class="hero">
   <div class="hero__media" aria-hidden="true">
     <img src="https://cdn.chime.me/image/fs/cmsbuild/202376/20/original_59336078-d7c3-40bb-8f3a-7a5c20753e66-png.webp" alt="">
     <div class="hero__scrim"></div>
   </div>
-
   <div class="hero__grid">
     <div class="hero__eyebrow">
       <span class="dot"></span>
       <span>eXp Realty · North County San Diego · Est. 1990</span>
     </div>
-
     <h1 class="hero__title">
       <span class="line">A local expert</span>
       <span class="line"><em>for every</em> move</span>
       <span class="line">you'll ever make.</span>
     </h1>
-
     <p class="hero__lede">
       Thousands of successful sales across Vista, Oceanside, Carlsbad, San Marcos,
       Escondido &amp; the coast — handled personally, strategically, and without pressure.
     </p>
-
-    <!-- Search card -->
     <div class="search" role="search">
       <div class="search__label">Search properties by address</div>
       <form class="search__form" onsubmit="return handleSearch(event)">
@@ -85,49 +87,31 @@
         <a href="#" data-q="Vista">Vista</a>
       </div>
     </div>
-
     <div class="hero__stats">
       <div><strong>30+</strong><span>Years licensed</span></div>
       <div><strong>1000s</strong><span>Homes sold</span></div>
       <div><strong>5.0</strong><span>Avg. client rating</span></div>
     </div>
   </div>
-
   <div class="hero__scroll" aria-hidden="true">
     <span>Explore</span>
     <svg width="12" height="40" viewBox="0 0 12 40" fill="none"><path d="M6 0v38M1 33l5 5 5-5" stroke="currentColor" stroke-width="1"/></svg>
   </div>
 </section>
 
-<!-- ============ MARQUEE ============ -->
 <section class="marquee" aria-hidden="true">
   <div class="marquee__track">
-    <span>Vista</span><i>✦</i>
-    <span>Oceanside</span><i>✦</i>
-    <span>Carlsbad</span><i>✦</i>
-    <span>Bonsall</span><i>✦</i>
-    <span>Fallbrook</span><i>✦</i>
-    <span>San Marcos</span><i>✦</i>
-    <span>Valley Center</span><i>✦</i>
-    <span>Encinitas</span><i>✦</i>
-    <span>Olivenhain</span><i>✦</i>
-    <span>Escondido</span><i>✦</i>
-    <span>Marina District</span><i>✦</i>
-    <span>Vista</span><i>✦</i>
-    <span>Oceanside</span><i>✦</i>
-    <span>Carlsbad</span><i>✦</i>
-    <span>Bonsall</span><i>✦</i>
-    <span>Fallbrook</span><i>✦</i>
-    <span>San Marcos</span><i>✦</i>
-    <span>Valley Center</span><i>✦</i>
-    <span>Encinitas</span><i>✦</i>
-    <span>Olivenhain</span><i>✦</i>
-    <span>Escondido</span><i>✦</i>
-    <span>Marina District</span><i>✦</i>
+    <span>Vista</span><i>✦</i><span>Oceanside</span><i>✦</i><span>Carlsbad</span><i>✦</i>
+    <span>Bonsall</span><i>✦</i><span>Fallbrook</span><i>✦</i><span>San Marcos</span><i>✦</i>
+    <span>Valley Center</span><i>✦</i><span>Encinitas</span><i>✦</i><span>Olivenhain</span><i>✦</i>
+    <span>Escondido</span><i>✦</i><span>Marina District</span><i>✦</i>
+    <span>Vista</span><i>✦</i><span>Oceanside</span><i>✦</i><span>Carlsbad</span><i>✦</i>
+    <span>Bonsall</span><i>✦</i><span>Fallbrook</span><i>✦</i><span>San Marcos</span><i>✦</i>
+    <span>Valley Center</span><i>✦</i><span>Encinitas</span><i>✦</i><span>Olivenhain</span><i>✦</i>
+    <span>Escondido</span><i>✦</i><span>Marina District</span><i>✦</i>
   </div>
 </section>
 
-<!-- ============ LISTINGS ============ -->
 <section class="listings" id="listings">
   <div class="section__head">
     <div>
@@ -143,11 +127,7 @@
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
     </a>
   </div>
-
-  <div class="grid" id="listings-grid">
-    <!-- cards injected by JS -->
-  </div>
-
+  <div class="grid" id="listings-grid"></div>
   <div class="listings__foot">
     <a href="#" class="btn btn--outline">
       Browse 100+ active listings
@@ -156,7 +136,6 @@
   </div>
 </section>
 
-<!-- ============ ABOUT ============ -->
 <section class="about" id="about">
   <div class="about__frame">
     <div class="about__portrait">
@@ -166,56 +145,32 @@
         <strong>1990</strong>
       </div>
     </div>
-
     <div class="about__body">
       <div class="eyebrow">About Jeff</div>
       <h2 class="about__title">
         Thirty&nbsp;years. <em>One</em> relentless standard<span class="gold">.</span>
       </h2>
-
       <p class="about__lead">
         "I love what I do and it shows in my commitment to achieving great results
         for my clients."
       </p>
-
       <p>
         Welcome — I'm Jeff Underdahl, your trusted local real estate expert in
         North San Diego County and beyond. With over 30 years of experience
         helping clients navigate the real estate market, I bring unmatched
         energy, integrity, and insight to every transaction.
       </p>
-
       <p>
         I specialize in Vista, Oceanside, Carlsbad, Bonsall, Fallbrook, San
         Marcos, Valley Center, Encinitas, Olivenhain, Escondido, and Downtown
         San Diego's iconic Marina District Skyrises. As a hometown guy, I've
         built my business on one simple principle: <em>your goals come first</em>.
       </p>
-
       <ul class="about__pillars">
-        <li>
-          <span class="num">01</span>
-          <div>
-            <strong>Advocate, not salesperson</strong>
-            <p>No pressure. Ever. You'll get my best advice — and the whole truth, even when it costs me a deal.</p>
-          </div>
-        </li>
-        <li>
-          <span class="num">02</span>
-          <div>
-            <strong>A proven, local system</strong>
-            <p>Thousands of successful sales across North County. Built on real-world results, not theory.</p>
-          </div>
-        </li>
-        <li>
-          <span class="num">03</span>
-          <div>
-            <strong>Clients become friends</strong>
-            <p>Most of my clients are still friends to this day. That's the part that makes it all worth it.</p>
-          </div>
-        </li>
+        <li><span class="num">01</span><div><strong>Advocate, not salesperson</strong><p>No pressure. Ever. You'll get my best advice — and the whole truth, even when it costs me a deal.</p></div></li>
+        <li><span class="num">02</span><div><strong>A proven, local system</strong><p>Thousands of successful sales across North County. Built on real-world results, not theory.</p></div></li>
+        <li><span class="num">03</span><div><strong>Clients become friends</strong><p>Most of my clients are still friends to this day. That's the part that makes it all worth it.</p></div></li>
       </ul>
-
       <div class="about__cta">
         <a href="tel:+17602718772" class="btn btn--solid">Call &amp; Text Jeff</a>
         <a href="#contact" class="btn btn--ghost">Send a message</a>
@@ -224,14 +179,11 @@
   </div>
 </section>
 
-<!-- ============ VALUATION ============ -->
 <section class="valuation" id="valuation">
   <div class="valuation__inner">
     <div class="valuation__copy">
       <div class="eyebrow light">Free · 60 Seconds</div>
-      <h2 class="valuation__title">
-        What's your home <em>really</em> worth?
-      </h2>
+      <h2 class="valuation__title">What's your home <em>really</em> worth?</h2>
       <p>
         Fast, free, and actually accurate — a personal valuation prepared by Jeff,
         grounded in what's closing today in your neighborhood. No email drip.
@@ -243,25 +195,13 @@
         <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Personal walkthrough (optional)</li>
       </ul>
     </div>
-
     <form class="valuation__form" onsubmit="return handleValuation(event)">
       <div class="valuation__steps">
-        <span class="active">1 · Address</span>
-        <span>2 · Details</span>
-        <span>3 · Valuation</span>
+        <span class="active">1 · Address</span><span>2 · Details</span><span>3 · Valuation</span>
       </div>
-      <label>
-        <span>Property address</span>
-        <input type="text" required placeholder="123 Main St, Carlsbad, CA">
-      </label>
-      <label>
-        <span>Your name</span>
-        <input type="text" required placeholder="First &amp; last name">
-      </label>
-      <label>
-        <span>Phone or email</span>
-        <input type="text" required placeholder="So Jeff can send the report">
-      </label>
+      <label><span>Property address</span><input type="text" required placeholder="123 Main St, Carlsbad, CA"></label>
+      <label><span>Your name</span><input type="text" required placeholder="First &amp; last name"></label>
+      <label><span>Phone or email</span><input type="text" required placeholder="So Jeff can send the report"></label>
       <button type="submit" class="btn btn--solid btn--block">
         Get my home value
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
@@ -271,7 +211,6 @@
   </div>
 </section>
 
-<!-- ============ REVIEWS ============ -->
 <section class="reviews" id="reviews">
   <div class="section__head">
     <div>
@@ -283,76 +222,36 @@
       it all worth it.
     </p>
   </div>
-
   <div class="reviews__grid">
-    <figure class="review">
-      <div class="review__stars" aria-label="5 out of 5">★★★★★</div>
-      <blockquote>Jeff treated us like family from the very first conversation. No pressure, just real guidance and a sale that closed above asking.</blockquote>
-      <figcaption><strong>Maria &amp; David R.</strong><span>Carlsbad · Sold</span></figcaption>
-    </figure>
-    <figure class="review">
-      <div class="review__stars" aria-label="5 out of 5">★★★★★</div>
-      <blockquote>Thirty years of experience shows. Jeff anticipated every issue before it became one and negotiated a price we never thought possible.</blockquote>
-      <figcaption><strong>Kevin P.</strong><span>San Marcos · Bought</span></figcaption>
-    </figure>
-    <figure class="review">
-      <div class="review__stars" aria-label="5 out of 5">★★★★★</div>
-      <blockquote>The most honest realtor we've ever worked with. Told us the truth, even when it cost him the deal. We'll only ever use Jeff.</blockquote>
-      <figcaption><strong>The Huang Family</strong><span>Oceanside · Sold &amp; Bought</span></figcaption>
-    </figure>
+    <figure class="review"><div class="review__stars" aria-label="5 out of 5">★★★★★</div><blockquote>Jeff treated us like family from the very first conversation. No pressure, just real guidance and a sale that closed above asking.</blockquote><figcaption><strong>Maria &amp; David R.</strong><span>Carlsbad · Sold</span></figcaption></figure>
+    <figure class="review"><div class="review__stars" aria-label="5 out of 5">★★★★★</div><blockquote>Thirty years of experience shows. Jeff anticipated every issue before it became one and negotiated a price we never thought possible.</blockquote><figcaption><strong>Kevin P.</strong><span>San Marcos · Bought</span></figcaption></figure>
+    <figure class="review"><div class="review__stars" aria-label="5 out of 5">★★★★★</div><blockquote>The most honest realtor we've ever worked with. Told us the truth, even when it cost him the deal. We'll only ever use Jeff.</blockquote><figcaption><strong>The Huang Family</strong><span>Oceanside · Sold &amp; Bought</span></figcaption></figure>
   </div>
 </section>
 
-<!-- ============ CONTACT ============ -->
 <section class="contact" id="contact">
   <div class="contact__inner">
     <div class="contact__copy">
       <div class="eyebrow light">Get in Touch</div>
-      <h2 class="contact__title">
-        Text&nbsp;me <em>now.</em>
-      </h2>
+      <h2 class="contact__title">Text&nbsp;me <em>now.</em></h2>
       <p class="contact__lead">
         Send me your name and the best time to call — I'll treat you like family,
         give you my best advice, and apply zero pressure. Ever.
       </p>
-
       <ul class="contact__list">
-        <li>
-          <span class="label">Call &amp; text</span>
-          <a href="tel:+17602718772">+1 (760) 271-8772</a>
-        </li>
-        <li>
-          <span class="label">Email</span>
-          <a href="mailto:jeff@jeffunderdahl.com">jeff@jeffunderdahl.com</a>
-        </li>
-        <li>
-          <span class="label">Office</span>
-          <span>10620 Treena St. STE 230<br>San Diego, CA 92131</span>
-        </li>
-        <li>
-          <span class="label">License</span>
-          <span>CA DRE #01077484</span>
-        </li>
+        <li><span class="label">Call &amp; text</span><a href="tel:+17602718772">+1 (760) 271-8772</a></li>
+        <li><span class="label">Email</span><a href="mailto:jeff@jeffunderdahl.com">jeff@jeffunderdahl.com</a></li>
+        <li><span class="label">Office</span><span>10620 Treena St. STE 230<br>San Diego, CA 92131</span></li>
+        <li><span class="label">License</span><span>CA DRE #01077484</span></li>
       </ul>
     </div>
-
     <form class="contact__form" onsubmit="return handleContact(event)">
       <div class="row">
-        <label>
-          <span>Name</span>
-          <input type="text" required placeholder="Your name">
-        </label>
-        <label>
-          <span>Phone</span>
-          <input type="tel" required placeholder="(___) ___-____">
-        </label>
+        <label><span>Name</span><input type="text" required placeholder="Your name"></label>
+        <label><span>Phone</span><input type="tel" required placeholder="(___) ___-____"></label>
       </div>
-      <label>
-        <span>Email</span>
-        <input type="email" required placeholder="you@example.com">
-      </label>
-      <label>
-        <span>I'm interested in</span>
+      <label><span>Email</span><input type="email" required placeholder="you@example.com"></label>
+      <label><span>I'm interested in</span>
         <select>
           <option>Buying a home</option>
           <option>Selling my home</option>
@@ -361,10 +260,7 @@
           <option>Investment property</option>
         </select>
       </label>
-      <label>
-        <span>Message</span>
-        <textarea rows="3" placeholder="Tell Jeff about your goals, timing, neighborhood…"></textarea>
-      </label>
+      <label><span>Message</span><textarea rows="3" placeholder="Tell Jeff about your goals, timing, neighborhood…"></textarea></label>
       <button type="submit" class="btn btn--solid btn--block">
         Send message
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
@@ -373,62 +269,35 @@
   </div>
 </section>
 
-<!-- ============ FOOTER ============ -->
 <footer class="footer">
   <div class="footer__top">
     <div class="footer__brand">
       <div class="footer__mark">JU</div>
-      <p class="footer__tag">
-        eXp Realty of Southern California, Inc.<br>
-        CA DRE #02187306
-      </p>
+      <p class="footer__tag">eXp Realty of Southern California, Inc.<br>CA DRE #02187306</p>
     </div>
-
     <nav class="footer__nav" aria-label="Footer">
-      <div>
-        <h4>Buy</h4>
-        <a href="#">All Listings</a>
-        <a href="#">Featured Listings</a>
-        <a href="#">Sold Listings</a>
-      </div>
-      <div>
-        <h4>Sell</h4>
-        <a href="#">Sell My Home</a>
-        <a href="#valuation">Home Valuation</a>
-      </div>
-      <div>
-        <h4>About</h4>
-        <a href="#about">About Jeff</a>
-        <a href="#contact">Contact</a>
-        <a href="#reviews">Reviews</a>
-      </div>
-      <div>
-        <h4>Market</h4>
-        <a href="#">Snapshot</a>
-        <a href="#">Open Houses</a>
-      </div>
+      <div><h4>Buy</h4><a href="#">All Listings</a><a href="#">Featured Listings</a><a href="#">Sold Listings</a></div>
+      <div><h4>Sell</h4><a href="#">Sell My Home</a><a href="#valuation">Home Valuation</a></div>
+      <div><h4>About</h4><a href="#about">About Jeff</a><a href="#contact">Contact</a><a href="#reviews">Reviews</a></div>
+      <div><h4>Market</h4><a href="#">Snapshot</a><a href="#">Open Houses</a></div>
     </nav>
-
     <div class="footer__contact">
       <a href="tel:+17602718772">+1 (760) 271-8772</a>
       <a href="mailto:jeff@jeffunderdahl.com">jeff@jeffunderdahl.com</a>
       <span>10620 Treena St. STE 230<br>San Diego, CA 92131</span>
     </div>
   </div>
-
   <div class="footer__mls">
     IDX information is provided exclusively for consumers' personal, non-commercial
     use and may not be used for any purpose other than to identify prospective
     properties consumers may be interested in purchasing. Information deemed
     reliable but not guaranteed to be accurate. Listing information updated daily.
   </div>
-
   <div class="footer__bar">
     <span>© 2026 Jeff Underdahl · eXp Realty. All rights reserved.</span>
     <span>Terms · Privacy · Cookies</span>
   </div>
 </footer>
-
 <script src="/script.js"></script>
 </body>
 </html>
